@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "828023663611",
+    "firebase_url": "https://projects2-26d86-default-rtdb.firebaseio.com",
+    "project_id": "projects2-26d86",
+    "storage_bucket": "projects2-26d86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828023663611:android:dc4ebde900d4e654cd795e",
+        "android_client_info": {
+          "package_name": "com.example.project2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAajZDe6jHZq-xr7axBrRoHQHULRBnAZKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828023663611:android:139cdb0a040aa9eccd795e",
+        "android_client_info": {
+          "package_name": "com.example.projects2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAajZDe6jHZq-xr7axBrRoHQHULRBnAZKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "products": {
+    "product1": {
+      "name": "Gibson Les Paul 1982s",
+      "description": "Guitar",
+      "price": "$450,000",
+      "imageUrl": "gs://projects2-26d86.appspot.com/download.png"
+    },
+    "product2": {
+      "name": "Fender Strat",
+      "description": "Red Guitar",
+      "price": "$900,000",
+      "imageUrl": "gs://projects2-26d86.appspot.com/guitar2.jpg"
+    },
+    "product3": {
+      "name": "Fender Strat",
+      "description": "White Strat",
+      "price": "$600,000",
+      "imageUrl": "gs://projects2-26d86.appspot.com/guitar3.jpg"
+    },
+    "product4": {
+      "name": "Fender Cream Strat",
+      "description": "Cream Strat",
+      "price": "$600,000",
+      "imageUrl": "gs://projects2-26d86.appspot.com/guitar4.jpg"
+    },
+    "product5": {
+      "name": "Product 5",
+      "description": "Cream Strat",
+      "price": "$600,000",
+      "imageUrl": "gs://projects2-26d86.appspot.com/guitar4.jpg"
+    },
+    "product6": {
+      "name": "Product 6",
+      "description": "Cream Strat",
+      "price": "$600,000",
+      "imageUrl": "gs://projects2-26d86.appspot.com/guitar4.jpg"
+    },
+    "product7": {
+      "name": "Product 7",
+      "description": "Cream Strat",
+      "price": "$600,000",
+      "imageUrl": "gs://projects2-26d86.appspot.com/guitar4.jpg"
+    },
+    "product8": {
+      "name": "Product 8",
+      "description": "Cream Strat",
+      "price": "$600,000",
+      "imageUrl": "gs://projects2-26d86.appspot.com/guitar4.jpg"
+    },
+    "product9": {
+      "name": "Product 9",
+      "description": "Cream Strat",
+      "price": "$600,000",
+      "imageUrl": "gs://projects2-26d86.appspot.com/guitar4.jpg"
+    }
+  },
+  "configuration_version": "1"
+}

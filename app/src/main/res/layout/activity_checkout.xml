@@ -1,0 +1,270 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="42dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="42dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="42dp" />
+
+    <ImageView
+        android:id="@+id/checkoutbackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back"
+        app:layout_constraintStart_toStartOf="@+id/scrollview"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Checkout"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contactdetailsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTACT DETAILS"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:background="@android:color/darker_gray"
+                android:clickable="true"
+                android:focusable="true"
+                tools:ignore="OnClick"/>
+
+            <LinearLayout
+                android:id="@+id/contactDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/fullnameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="19dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="Full Name*"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/editTextPhonenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="19dp"
+                    android:ems="10"
+                    android:hint="Phone Number*"
+                    android:inputType="phone" />
+
+                <EditText
+                    android:id="@+id/editTextEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="17dp"
+                    android:ems="10"
+                    android:hint="Email*"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/shippingaddressTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SHIPPING ADDRESS"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:background="@android:color/darker_gray"
+                android:clickable="true"
+                android:focusable="true"
+                tools:ignore="OnClick"/>
+        <LinearLayout
+            android:id="@+id/shippingDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/countryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="19dp"
+                android:ems="10"
+                android:hint="Country*"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/stateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="19dp"
+                android:ems="10"
+                android:hint="State*"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/cityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="19dp"
+                android:ems="10"
+                android:hint="City*"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/postalcodeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="19dp"
+                android:ems="10"
+                android:hint="Postal Code*"
+                android:inputType="text" />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/carddetailsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CARD DETAILS"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:background="@android:color/darker_gray"
+                android:clickable="true"
+                android:focusable="true"
+                tools:ignore="OnClick"/>
+        <LinearLayout
+            android:id="@+id/cardDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/cardnumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="19dp"
+                android:ems="10"
+                android:hint="Card Number*"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/expirymontheditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="19dp"
+                android:ems="10"
+                android:hint="Expiry Month*"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/expiryyeareditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="19dp"
+                android:ems="10"
+                android:hint="Expiry Year*"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/cvveditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="19dp"
+                android:ems="10"
+                android:hint="CVV*"
+                android:inputType="numberPassword" />
+        </LinearLayout>
+            <Button
+                android:id="@+id/checkoutsubmitbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="14dp"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/expiryyeareditText"
+                app:layout_constraintTop_toBottomOf="@+id/cvveditText" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
